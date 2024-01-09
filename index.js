@@ -18,8 +18,17 @@
 
 
 
-console.log("hello dipesh");
-const express = require('express');
-const server = express();
-server.listen(8080);
+// console.log("hello dipesh");
+// const express = require('express');
+// const server = express();
+// server.listen(8080);
 
+const os = require('os');
+// console.log(os.EOL);//cursor go to next line
+// console.log(os.arch());//tells your os arch...x64
+// console.log(os.cpus());
+// console.log(os.devNull);
+// console.log(os.freemem());
+// console.log(os.homedir());
+// console.log(os.networkInterfaces());
+console.log(os.version());
