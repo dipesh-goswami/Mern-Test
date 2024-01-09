@@ -1,13 +1,13 @@
-//**********importing as function***************
+//********** importing as function ***************
 // import { diff } from './lib.js';
 // console.log(diff(3, 5));
 
 
-//************importing as variable******************
+//************ importing as variable ******************
 // const libe = require('./lib.js');
 // console.log(libe.sum(1, 2));
 
-// //***************using fs**********************
+// //*************** using fs **********************
 // const fs = require('fs');
 // // const txt = fs.readFileSync('demo.txt', 'utf-8');
 // // console.log(txt);
@@ -17,14 +17,14 @@
 // })
 
 
-//**********using express**************
+//********** using express **************
 // console.log("hello dipesh");
 // const express = require('express');
 // const server = express();
 // server.listen(8080);
 
 
-//**************using os*****************
+//************** using os *****************
 // const os = require('os');
 // // console.log(os.EOL);//cursor go to next line
 // // console.log(os.arch());//tells your os arch...x64
@@ -36,7 +36,7 @@
 // console.log(os.version());
 
 
-//**********promises******************
+//********** promises ******************
 // const p = new Promise((res, rej) => {
 //   rej("1211212");
 // });
@@ -55,7 +55,7 @@
 
 
 
-//*****************async await****************
+//***************** async await ****************
 // const p = new Promise((res, rej) => {
 //   setTimeout(() => { res(6) }, 2000);
 // });
@@ -69,3 +69,18 @@
 //solution:
 // 7
 // 6
+
+
+
+//************ API Tested *************
+async function gen() {
+  const res = await fetch('https://reqres.in/api/users?page=2');
+  const datas = await res.json();
+  console.log(datas.data[1].email);
+
+}
+gen();
+
+
+
+
