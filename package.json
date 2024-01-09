@@ -4,8 +4,9 @@
   "description": "example",
   "main": "index.js",
   "dependencies": {
-    "express":"^4.18.2",
+    "express": "^4.18.2",
     "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "os": "^0.1.2"
   },
   "scripts": {
